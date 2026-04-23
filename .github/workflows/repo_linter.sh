@@ -7,7 +7,18 @@ REPO_TO_LINT=$(
 	# Look for changes (indicated by lines starting with +).
 	grep ^+ |
 	# Get the line that includes the readme.
-	grep -Eo 'https.*#readme' |
+	grep -Eo 'https.*#readme' |+--[ED25519 256]--+
+|    . . .+ . .   |
+|   + . .= = . o  |
+|  . *  . B o .o. |
+| . =    ..o.+. oo|
+|  + . o S =..o.o.|
+|   o + . o = .o .|
+|      . . o..  ..|
+|         .  E =..|
+|          ..o=.=+|
++----[SHA256]-----+
+
 	# Get just the URL.
 	sed 's/#readme//')
 
